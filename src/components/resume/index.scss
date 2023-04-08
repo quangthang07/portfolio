@@ -1,0 +1,135 @@
+.education-container {
+    margin: 0 10%;
+    margin-bottom: 7em;
+    min-height: 100vh;
+
+    .edu-header {
+        display: flex;
+        justify-content: center;
+        margin: 10vh 0;
+        h2 {
+            display: inline-block;
+            font-weight: 500;
+            text-align: center;
+            padding: 4px 8px;
+            border-radius: 3px;
+            animation: fadeInUp 1s 0.6 forwards;
+        }
+    }
+    .edu-content {
+        .timeline-info {
+            text-align: center;
+            span {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: rgba($color: #000000, $alpha: 0.3);
+                border-radius: 3px;
+            }
+        }
+        .timeline {
+            position: relative;
+        }
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            bottom: 0;
+            width: 2px;
+            left: 50%;
+            background-color: #e6e6e6;
+            animation: fadeIn 1s 0.4 forwards;
+        }
+        li {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            list-style: none;
+            .timeline-badge {
+                position: absolute;
+                top: 20%;
+                left: 48.2%;
+                display: inline-block;
+                height: 44px;
+                width: 44px;
+                line-height: 44px;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 18px;
+                background-color: #ff9000;
+                color: #fff;
+                // animation: fadeInUp 1s 0.6 forwards;
+            }
+            .timeline-panel {
+                width: 45%;
+                .timeline-header {
+                    display: block;
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: #bfbfbf;
+                }
+            }
+            .right-content {
+                align-self: flex-end;
+                animation: fadeInUp 1s 0.6 forwards;
+            }
+            .left-content {
+                text-align: right;
+                animation: fadeInUp 1s 0.6 forwards;
+            }
+        }
+
+    }
+}
+@media only screen and (max-width: 992px) {
+    .education-container{
+        .edu-content {
+            .timeline::before {
+                content: "";
+                position: absolute;
+                top: 0px;
+                bottom: 0;
+                width: 2px;
+                left: 10%;
+                background-color: #e6e6e6;
+            }
+            li{
+                .timeline-badge{
+                    left: 0%;
+                }
+                .timeline-panel {
+                    width: auto;
+                    margin-left: 20%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .education-container{
+        .edu-content {
+            .timeline::before {
+                content: "";
+                position: absolute;
+                top: 0px;
+                bottom: 0;
+                width: 2px;
+                left: 5%;
+                background-color: #e6e6e6;
+            }
+            li{
+                .timeline-badge{
+                    left: 0%;
+                }
+                .timeline-panel {
+                    margin-left: 20%;
+                    width: auto;
+                }
+                .left-content {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

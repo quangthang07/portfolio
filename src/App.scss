@@ -1,0 +1,20 @@
+
+@import 'animate.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&family=Quicksand:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, figure {
+  color: #000;
+  font-family: "Space Mono", Arial, serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 24px;
+}
