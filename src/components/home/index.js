@@ -11,7 +11,7 @@ function Home() {
         <h1 className='name'>
           <span >Nguyen Quang Thang</span>
         </h1>
-        <p>Full-stack Web Developer</p>
+        <p>I'm a college student, learning to become <span className='highlight'>Full-stack Web Developer</span></p>
         <ul className='social-links'>
           <li>
             <a target='_blank' rel='noreferrer' href='https://www.facebook.com/your.quangthang/'>

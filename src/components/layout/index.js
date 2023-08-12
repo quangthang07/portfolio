@@ -25,9 +25,6 @@ const Layout = () => {
             <Work/>
             <Contact/>
             <Footer/>
-            {/* <div className='page'>
-                <Outlet/>
-            </div> */}
         </div>
     )
 }

@@ -2,18 +2,9 @@ import './index.scss';
 import aboutImage from '../../assets/images/about-image.jpeg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faCalendarDays, faEnvelope, faGamepad, faGift, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import entrySheet from '../../assets/pdf_files/entry-sheet.pdf';
 
-const downloadCvURL = `${window.location.origin}/entry-sheet.pdf`;
 const About = () => {
-    const downloadCv = (url) => {
-        const fileName = url.split("/").pop();
-        const aTag = document.createElement("a");
-        aTag.href = url;
-        aTag.setAttribute("download", fileName);
-        document.body.appendChild(aTag);
-        aTag.click();
-        aTag.remove();
-    }
     return (
         <div className="about-container" id="about">
             <h2>About</h2>
@@ -59,7 +50,7 @@ const About = () => {
                         </li>
                     </ul>
                     <div className='download-cv-btn'>
-                        <button onClick={() => {downloadCv(downloadCvURL)}}>Download CV</button>
+                        <a href={entrySheet} download="entrysheet.pdf">Download CV</a>
                     </div>
                 </div>
             </div>

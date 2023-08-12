@@ -77,6 +77,11 @@
             margin-top: 2rem;
             font-family: "Space Mono", monospace;
             animation: fadeIn 1s 0.6 forwards;
+            font-size: 1.2rem;
+
+            .highlight {
+                color: #000;
+            }
         }
         .social-links {
             display: flex;

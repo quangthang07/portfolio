@@ -72,7 +72,8 @@
             .download-cv-btn {
                 margin: 1rem 0;
                 animation: fadeInUp 1s 0.6s forwards;
-                button {
+                a {
+                    display: inline-block;
                     border: none;
                     background-color: rgb(255, 144, 0);
                     padding: 0.5rem 0.5rem;
