@@ -16,15 +16,17 @@ const Footer = React.lazy(() => import('../footer'));
 const Layout = () => {
 
     return (
-        <div className='App' data-bs-spy="scroll" data-bs-target="#left-sidebar" data-bs-offset="0" tabindex="0">
+        <div>
             <Sidebar/>
-            <Home/>
-            <About/>
-            <Resume/>
-            <Skills/>
-            <Work/>
-            <Contact/>
-            <Footer/>
+            <div className='app-scrollspy' data-bs-spy="scroll" data-bs-target="#left-sidebar" data-bs-offset="0" tabindex="0">
+                <Home/>
+                <About/>
+                <Resume/>
+                <Skills/>
+                <Work/>
+                <Contact/>
+                <Footer/>
+            </div>
         </div>
     )
 }

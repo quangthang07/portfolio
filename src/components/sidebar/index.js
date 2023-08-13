@@ -39,33 +39,40 @@ const blockId = [
 ]
 const Sidebar = () => {
     const [visible, show] = useState(false);
-    const [active, setActive] = useState("home");
+    // const [active, setActive] = useState("home");
 
     const handleSidebarCollapse = () => {
         show(!visible);
     }
 
     return (
-        <div>
-            <button className='navbar-btn' onClick={handleSidebarCollapse}>
-                <FontAwesomeIcon icon={faBars}/>
-            </button>
-            <div className={visible ? "nav navbar" : "nav navbar navbar-hidden"} id='left-sidebar'>
-                {
-                    blockId.map(item => {
-                        return (
-                        <a  key={item.key}
-                            href={`#${item.id}`}
-                            onClick={() => setActive(item.id)}
-                            className={`navbar-link nav-link scrollto ${active === item.id ? "active" : ""}`}>
-                            <FontAwesomeIcon icon={item.icon} className='sidebar-icon'/>
-                            <span>{item.id.toUpperCase()}</span>
-                        </a>
-                        )
-                    })
-                }
+        <>
+        <button className='sidebar-hidden-btn' onClick={handleSidebarCollapse}>
+            <FontAwesomeIcon icon={faBars}/>
+        </button>
+        <div className={visible ? "navigation-sidebar" : "navigation-sidebar sidebar-hidden"}>
+            <div></div>
+            <div className='nav navbar' id='left-sidebar'>
+                <ul className="nav">
+                    {
+                        blockId.map(item => {
+                            return (
+                                <li className='nav-item'>
+                                    <a  key={item.key}
+                                        href={`#${item.id}`}
+                                        // onClick={() => setActive(item.id)}
+                                        className={`nav-link sidebar-link`}>
+                                        <FontAwesomeIcon icon={item.icon} className='sidebar-icon'/>
+                                        <span>{item.id.toUpperCase()}</span>
+                                    </a>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
             </div>
         </div>
+        </>
     )
 }
 
