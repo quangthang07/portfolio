@@ -1,6 +1,7 @@
 import './index.scss';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+// import * as mdb from 'mdb-ui-kit';
 
 function Home() {
   return (
@@ -8,10 +9,10 @@ function Home() {
       <div className='overlay'></div>
       <div className='cover-content'>
         <div className='avatar'></div>
-        <h1 className='name'>
-          <span >Nguyen Quang Thang</span>
+        <h1 className='name animate__animated animate__fadeIn'>
+          <span>Nguyen Quang Thang</span>
         </h1>
-        <p>I'm a college student, learning to become <span className='highlight'>Full-stack Web Developer</span></p>
+        <p>A senior student, learning to become <span className='highlight'>Full-stack Web Developer</span></p>
         <ul className='social-links'>
           <li>
             <a target='_blank' rel='noreferrer' href='https://www.facebook.com/your.quangthang/'>

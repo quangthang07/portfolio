@@ -64,12 +64,12 @@ const Contact = () => {
                 <form className="contact-form" ref={refForm} onSubmit={sendEmail}>
                     <div className='name-email'>
                         <div>
-                            <h4>Name</h4>
-                            <input type="text" name="name" placeHolder="Your Name" require />
+                            <h4>Email</h4>
+                            <input type="email" name="email" placeHolder="Your email" require />
                         </div>
                         <div>
-                            <h4>Email</h4>
-                            <input type="email" name="email" placeHolder="Your Email" require />
+                            <h4>Name</h4>
+                            <input type="text" name="name" placeHolder="Your name" require />
                         </div>
                     </div>
                     <div>

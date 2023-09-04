@@ -9,7 +9,7 @@ const education = [
     name: "Le Quy Don",
     startYear: 2015,
     endYear: 2018,
-    text:'Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.'
+    text:'During high school, I focused on mathematics, physics, and chemistry. I found solving challenging problems in my math classes to be particularly satisfying. To maintain high grades, I also dedicated myself to studying humanities subjects. As a result, I graduated as a high-achieving student with an overall average of 8/10 in all subjects.'
   },
   {
     id:2,
@@ -17,7 +17,7 @@ const education = [
     name: "Shibuya Lall Japanese school",
     startYear: 2018,
     endYear: 2020,
-    text:'Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.'
+    text:'When I came to Japan to study, I spent a year and a half attending a Japanese language school. This helped me to enhance my language abilities and prepare for university entrance exams. Not only did I learn Japanese, but I also developed valuable soft skills like communication and argumentation.'
   },
   {
     id:3,
@@ -25,7 +25,7 @@ const education = [
     name: "Takushoku university",
     startYear: 2020,
     endYear: 2024,
-    text:'Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.'
+    text:'During my time at Takushoku University, I gained a solid foundation in the various stages of programming, including creating, compiling, executing, and debugging programs. I also delved into "Data Structures and Algorithms" to develop efficient programs, "Databases" to manage data, "Object Oriented Programming" to learn important concepts and techniques ranging from system analysis to development, and "Web Applications and Services" to acquire basic knowledge of web development. In my third year, during the second semester, I was assigned to a laboratory where I engaged in research activities and also learned valuable skills such as presentation, communication, report writing, and thesis paper composition.'
   },
 ]
 

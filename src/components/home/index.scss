@@ -50,7 +50,7 @@
             line-height: 1.3;
             color: #fff;
             transform: rotate(-10deg);
-            animation: fadeIn 1s 0.6 forwards;
+            // animation: fadeIn 1s 0.6 forwards;
 
             span::before {
                 content: "";
@@ -76,7 +76,7 @@
         p {
             margin-top: 2rem;
             font-family: "Space Mono", monospace;
-            animation: fadeIn 1s 0.6 forwards;
+            // animation: fadeIn 1s 0.6 forwards;
             font-size: 1.2rem;
 
             .highlight {
@@ -90,7 +90,7 @@
             li {
                 list-style: none;
                 padding: 10px;
-                animation: fadeInUp 1s 0.8 forwards;
+                // animation: fadeInUp 1s 0.8 forwards;
             }
 
             a {

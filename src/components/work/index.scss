@@ -14,18 +14,19 @@
         flex-wrap: wrap;
 
         .project-wrapper {
-            width: 25%;
+            width: 33.3%;
             animation: fadeInUp 1s 0.4s forwards;
+
             .project{
                 display: block;
                 height: 270px;
                 margin: 5px;
                 background-color: #ccc;
-                background-image: url("../../assets/images/cover-image.jpeg");
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: 50% 50%;
+                background-position: 45% 45%;
                 text-decoration: none;
+                border-radius: 8px;
 
                 .project-des {
                     display: flex;
@@ -33,7 +34,7 @@
                     justify-content: center;
                     align-items: center;
                     height: 274px;
-                    background: #fff;
+                    background: #ccc;
                     opacity: 0;
                     -webkit-transition: 0.3s;
                     -o-transition: 0.3s;
@@ -44,13 +45,13 @@
                     }
                     span {
                         display: block;
-                        color: #999999;
-
+                        color: #000;
                     }
                 }
             }
             .project:hover {
                 & > .project-des {
+                    border-radius: 8px;
                     opacity: 1;
                 }
             }
